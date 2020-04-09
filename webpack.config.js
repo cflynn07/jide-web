@@ -29,7 +29,9 @@ module.exports = {
     contentBase: path.join(__dirname, 'public/'),
     port: 80,
     publicPath: 'http://localhost/',
-    hotOnly: true
+    hotOnly: true,
+    disableHostCheck: true,
+    host: '0.0.0.0'
   },
   devtool: 'inline-source-map',
   plugins: [
